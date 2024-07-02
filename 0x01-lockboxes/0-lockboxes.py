@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """Solve the lockbox problem"""
 
 
@@ -11,7 +11,12 @@ def canUnlockAll(boxes):
         for key in box:
             if key in res:
                 continue
-            res[f"{key}"] = True
+            else:
+                res[f"{key}"] = True
+                for tri in boxes[key]:
+                    if tri in res:
+                        continue
+                    res[f"{key}"] = True
     if len(boxes) == len(res):
         return True
     return False
