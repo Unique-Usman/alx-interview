@@ -12,11 +12,12 @@ def canUnlockAll(boxes):
             if key in res:
                 continue
             else:
-                res[f"{key}"] = True
-                for tri in boxes[key]:
-                    if tri in res:
-                        continue
+                if key < len(boxes):
                     res[f"{key}"] = True
+                    for tri in boxes[key]:
+                        if tri in res:
+                            continue
+                        res[f"{key}"] = True
     if len(boxes) == len(res):
         return True
     return False
