@@ -3,10 +3,8 @@
 Rotate n * n matrix in 90 degress
 """
 
-from typing import List
 
-
-def rotate_2d_matrix(matrix: List[List[int]]) -> None:
+def rotate_2d_matrix(matrix) -> None:
 
     for i in range(len(matrix)):
         for j in range(i, len(matrix[0])):
