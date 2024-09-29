@@ -5,7 +5,11 @@ Rotate n * n matrix in 90 degress
 
 
 def rotate_2d_matrix(matrix) -> None:
-
+    """
+    Rotate a n * n matrix
+    Args:
+        matrix: n * n matrix
+    """
     for i in range(len(matrix)):
         for j in range(i, len(matrix[0])):
             if i != j:
