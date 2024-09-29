@@ -4,7 +4,7 @@ Rotate n * n matrix in 90 degress
 """
 
 
-def rotate_2d_matrix(matrix) -> None:
+def rotate_2d_matrix(matrix):
     """
     Rotate a n * n matrix
     Args:
